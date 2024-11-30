@@ -1,0 +1,36 @@
+/* SpeechInput.css */
+.speech-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #6200ea;
+    border-radius: 12px;
+    background-color: #f3f4f6;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.speech-input-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.speech-input-button:hover {
+    background-color: #3700b3;
+}
+
+.speech-input-text {
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}

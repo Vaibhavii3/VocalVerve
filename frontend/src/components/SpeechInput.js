@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import './SpeechInput.css';
+
 
 const SpeechInput = () => {
     const [transcript, setTranscript] = useState("");
@@ -22,11 +24,9 @@ const SpeechInput = () => {
     };
 
     return (
-        <div style={{ 
-            backgroundColor: "wheat",
-        }}>
-            <button onClick={handleAudioCapture}>Start Translation</button>
-            <div>
+        <div className="speech-input-container">
+            <button className="speech-input-button" onClick={handleAudioCapture}>Start Translation</button>
+            <div className="speech-input-text">
                 <h3> Transcript: </h3>
                 <p> {transcript} </p>
                 <h3> Translation: </h3>
